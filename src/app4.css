@@ -1,0 +1,20 @@
+#app4 {
+}
+/*声明一个动画*/
+@keyframes change {
+  0% {
+    background: red;
+  }
+  100% {
+    background: rgb(25, 11, 226);
+  }
+}
+#app4 .circle {
+  border: 1px solid red;
+  border-radius: 50%;
+  width: 8vw;
+  height: 8vw;
+}
+#app4 .circle.active {
+  animation: change 1s infinite alternate linear;
+}

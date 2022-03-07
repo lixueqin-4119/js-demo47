@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+input,
+button {
+  font-family: inherit;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body > .page {
+  display: flex;
+  flex-wrap: wrap;
+}
+body > .page > section {
+  width: 50vh;
+  height: 50vh;
+  border: 1px solid rgb(12, 11, 11);
+}
+
+#app1 .output {
+}
+#app1 .actions {
+}
+
+#app2 .tab-bar {
+  display: flex;
+}
+#app2 .tab-bar > li {
+  border: 3px solid black;
+  width: 50%;
+}
+#app2 .tab-bar > li.selected {
+  background: red;
+  color: aliceblue;
+}
+#app2 .tab-content {
+}
+#app2 .tab-content > li {
+  display: none;
+}
+#app2 .tab-content > li.active {
+  display: block;
+}
+
+#app3 .square {
+  border: 1px solid red;
+  margin-top: 10vh;
+  margin-left: 10vh;
+  width: 5vw;
+  height: 5vh;
+  transition: transform 1s;
+}
+#app3 .square.active {
+  transform: translateX(5vw);
+}
+
+#app4 {
+}
+/*声明一个动画*/
+@keyframes change {
+  0% {
+    background: red;
+  }
+  100% {
+    background: rgb(25, 11, 226);
+  }
+}
+#app4 .circle {
+  border: 1px solid red;
+  border-radius: 50%;
+  width: 8vw;
+  height: 8vw;
+}
+#app4 .circle.active {
+  animation: change 1s infinite alternate linear;
+}
+
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */

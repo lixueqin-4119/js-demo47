@@ -1,0 +1,19 @@
+#app2 .tab-bar {
+  display: flex;
+}
+#app2 .tab-bar > li {
+  border: 3px solid black;
+  width: 50%;
+}
+#app2 .tab-bar > li.selected {
+  background: red;
+  color: aliceblue;
+}
+#app2 .tab-content {
+}
+#app2 .tab-content > li {
+  display: none;
+}
+#app2 .tab-content > li.active {
+  display: block;
+}
